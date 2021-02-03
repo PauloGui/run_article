@@ -1,9 +1,15 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Container, Wrapper } from './styles';
 
 function Main() {
-  return <div />;
+  return (
+    <Container>
+      <Wrapper>
+        <h1>Hello world!</h1>
+      </Wrapper>
+    </Container>
+  );
 }
 
 export default Main;
