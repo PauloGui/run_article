@@ -8,14 +8,14 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  padding: 0 30px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
 export const ImgLogo = styled.img`
-  width: 250px;
+  width: 240px;
   height: 80px;
   object-fit: cover;
 `;
