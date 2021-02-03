@@ -1,12 +1,12 @@
 import React from 'react';
-
+import Header from '../../components/Header';
 import { Container, Wrapper } from './styles';
 
 function Main() {
   return (
     <Container>
       <Wrapper>
-        <h1>Hello world!</h1>
+        <Header />
       </Wrapper>
     </Container>
   );

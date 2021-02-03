@@ -7,4 +7,8 @@ export default createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Maven Pro';
   }
+
+  :root {
+    --color-base: #1675AA;
+  }
 `;
