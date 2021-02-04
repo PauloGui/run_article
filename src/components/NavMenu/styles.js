@@ -5,10 +5,15 @@ import { FaHome, FaNewspaper } from 'react-icons/fa';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 80px;
+  width: 250px;
   padding: 10px;
-  height: 100vh;
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--color-base);
+  overflow: hidden;
 `;
 
 export const Wrapper = styled.div`
