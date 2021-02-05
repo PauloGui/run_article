@@ -5,6 +5,8 @@ export const Container = styled.div`
   width: 100%;
   height: 80px;
   background-color: var(--color-base);
+  position: fixed;
+  z-index: 4;
 `;
 
 export const Wrapper = styled.div`
