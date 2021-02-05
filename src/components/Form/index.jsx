@@ -50,53 +50,16 @@ function Form() {
         </ContainerInput>
       </ContainerBox>
 
-      <ContainerBox articleRead>
-        <ImgArticle src="https://github.com/pedrootoniel/article-projetct/blob/main/src/assets/artigo1.png?raw=true" />
-        <TextsBox>
-          <Title titleArticle>Meu artigo</Title>
-          <hr />
-          <Text>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </Text>
-        </TextsBox>
-      </ContainerBox>
-
-      <ContainerBox articleRead>
-        <ImgArticle src="https://github.com/pedrootoniel/article-projetct/blob/main/src/assets/artigo1.png?raw=true" />
-        <TextsBox>
-          <Title titleArticle>Meu artigo</Title>
-          <hr />
-          <Text>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </Text>
-        </TextsBox>
-      </ContainerBox>
-
-      <ContainerBox articleRead>
-        <ImgArticle src="https://github.com/pedrootoniel/article-projetct/blob/main/src/assets/artigo1.png?raw=true" />
-        <TextsBox>
-          <Title titleArticle>Meu artigo</Title>
-          <hr />
-          <Text>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </Text>
-        </TextsBox>
-      </ContainerBox>
+      {data.articles.map((art) => (
+        <ContainerBox articleRead key={art.id}>
+          <ImgArticle src="https://github.com/pedrootoniel/article-projetct/blob/main/src/assets/artigo1.png?raw=true" />
+          <TextsBox>
+            <Title titleArticle>{art.title}</Title>
+            <hr />
+            <Text>{art.content}</Text>
+          </TextsBox>
+        </ContainerBox>
+      ))}
 
       <Footer />
     </Container>
